@@ -7,6 +7,7 @@
     <!-- *888888    Come back to this  !!!!!!!!!!!!!!! -->
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Chonburi|Fahkwang:700|Unlock" rel="stylesheet">    
     <style amp-custom>
       /* any custom style goes here */
       body {
@@ -25,13 +26,16 @@
         -webkit-transform:rotate(-90deg); 
          position: absolute; 
          top: 380px;
-         font-size: 3.7em; 
+         font-size: 3em; 
+          mix-blend-mode: exclusion;
+          left: 0px;
+        font-family: 'Unlock', cursive;
         }
 
         .contact{
           position: absolute;
-          left: 200px;
-          top: 750px;
+          left: 180px;
+          top: 0px;
         }
 
       .grid{
@@ -44,14 +48,28 @@
       .left{
         padding: 7rem 2rem 0rem 4rem;
         border-right: 1px solid white;
+        background: url(images/batman.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: exclusion;
       }
 
       .right{
         padding: 5rem 5rem 0rem 10rem;
+        background: grey;
+        color: black;
       }
+
       .self{
-         border-radius: 50%;
+        border-radius: 50%;
       }
+
+      .experience{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+
 
 
     </style>
@@ -71,11 +89,12 @@
   <body>
       <div class="grid">
         <div class="left">          
-          <amp-img src="images/batman.jpg" alt="Bat Man" height="100" width="300"></amp-img>
-          <h1> Alfonso Arriola <br> Security</h1>
+          <!-- <amp-img src="images/batman.jpg" alt="Bat Man" height="100" width="300"></amp-img> -->
+          <h1> <b>ALFONSO ARRIOLA <br> Security Guard</b></h1>
           <div class="contact">
             <h2> Contact</h2>
-              <a href="">Linkedin</a>
+              <a href="https://www.linkedin.com/in/alfonso-arriola/">Linkedin</a>
+
               <br>
               347-924-7532
           </div>
@@ -85,26 +104,40 @@
             <h4> ID: 10012734780</h4>
             <a href="https://appext20.dos.ny.gov/lcns_public/id_search_frm"> <b><u>Check My License Status Here</u></b></a>
 
-                <amp-img class="self" src="images/self.jpg" alt="Alfonso Arriola" height="200" width="200"></amp-img>
-
-                
-               <h2> Experience </h2>
-            <ul>
-              <li> Bars </li>
-                <ol>
-                  <li> Refinery Rooftop </li>
-                  <li> The Wilson </li>
-                  <li> The Flying Cock </li>
-                </ol>
-              <li> Banks </li>
-                <ol>
-                  <li> TD Bank </li>
-                </ol>
-              <li> Special Events </li>
-               <ol>
-                 <li> Barbara Kruger</li>
-               </ol>
-            </ul>
+                <amp-img class="self" src="images/self.webp" alt="Alfonso Arriola" height="200" width="200"></amp-img>
+                  <h2> Experience </h2>
+               <div class="experience">
+                  <div>
+                    <h3> Bars </h3>
+                      <ul>
+                        <li> <a href="https://ingoodcompany.com/restaurants/refineryrooftop/"> Refinery Rooftop </a> </li>
+                        <li> <a href="https://ingoodcompany.com/restaurants/thewilson/"> The Wilson </a> </li>
+                        <li> <a href="https://www.theflyingcocknyc.com/"> The Flying Cock </a></li>
+                        <li> <a href="http://www.ricardosteakhouse.com/"> Ricardo's Steakhouse </a></li>
+                      </ul>
+                  </div>
+                  <div>
+                    <h3> Special Events </h3>
+                     <ul>
+                       <li> <a href="https://www.hollywoodreporter.com/news/barbara-kruger-takes-supreme-by-covering-new-york-city-pop-art-1057280"> Barabra Kruger's Untitled (The Drop) Live Performace</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                    <h3> Banks </h3>
+                     <ul>
+                       <li> <a href="https://www.td.com/us/en/personal-banking/">TD Bank</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                    <h3> Museums </h3>
+                     <ul>
+                       <li> <a href="http://nuegalerie.com/">NUE galerie
+</a></li>
+                     </ul>
+                  </div>    
+               </div>
+               
+      
 
             <h2> Qualifications & Training </h2>
              <ul>
@@ -116,7 +149,7 @@
                <li> OIF/OEF Veteran </li>
                <li> Army Achievement Medal </li>
                <li> Navy Achievement Medal </li>
-             </ul>
+  
 
 
         </div> 
