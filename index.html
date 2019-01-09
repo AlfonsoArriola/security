@@ -14,30 +14,43 @@
        /* background-color: #0c0c0c;*/
        background: black;
         /*color:#fcfdff;*/
-        color: rgb(254,254,254);
-        padding: 0rem 3rem;
-        margin: 0;
-        font-family: 'Righteous', cursive;
+       color: rgb(254,254,254);
+       padding: 0rem;
+       margin: 0;
+       font-family: 'Righteous', cursive;
 
       }
+
+      a{
+        text-decoration: none;
+        color: #d88900;
+      }
+
+       ul{
+        list-style: none;
+       }
+
+       li{
+        margin: 1rem 0;
+       }
 
       h1{
        /* transform: rotate(90deg);
         transform-origin: left top 0;
         float: left;*/
         -webkit-transform:rotate(-90deg); 
-         position: absolute; 
-         top: 380px;
-         font-size: 3.2em; 
-          mix-blend-mode: exclusion;
-          left: 0px;
-          font-family: 'Abril Fatface', cursive;
+        position: absolute; 
+        top: 380px;
+        font-size: 3.2em; 
+        mix-blend-mode: exclusion;
+        left: 0px;
+        font-family: 'Abril Fatface', cursive;
         }
 
         .contact{
-          position: absolute;
-          left: 180px;
-          top: 0px;
+        position: absolute;
+        left: 180px;
+        top: 0px;
         }
 
       .grid{
@@ -58,17 +71,89 @@
 
       .right{
         padding: 5rem 5rem 0rem 10rem;
-        background: grey;
+        background: white;
         color: black;
       }
 
       .self{
         border-radius: 50%;
+        margin: 2rem 0;
       }
 
       .experience{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-content: start;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .experience{
+          grid-template-columns: 1fr;
+        }
+      }
+
+     /* @media only screen and (max-width: 600px) {
+        h1{
+          font-size: 2.2em;
+        }
+      }*/
+
+      @media only screen and (max-width: 600px) {
+        .grid{
+          height: 100vh;
+          width: 100vw;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        h1{
+          font-size: 2em;
+          -webkit-transform:rotate(0deg); 
+          position: initial; 
+          top: initial;
+          left: initial;
+  
+        }
+
+        strong{
+          color: #3b83f8;
+        }
+
+        .left{
+          padding: 7rem 2rem 0rem 4rem;
+          border-right: 1px solid white;
+          background: url(images/batman500.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          mix-blend-mode: exclusion;
+        }
+
+        .contact{
+          top: initial;
+          left: initial;
+        }
+
+        .contact h2{
+          display: none;
+        }
+
+        .right{
+          padding: 5rem;
+          background: white;
+          color: black;
+        }
+
+      }
+
+      @media only screen and (max-width: 400px) {
+        .left{
+          padding: 7rem 2rem 0rem 4rem;
+          border-right: 1px solid white;
+          background: url(images/batman500.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          mix-blend-mode: exclusion;
+        }
       }
 
 
@@ -91,20 +176,23 @@
   <body>
       <div class="grid">
         <div class="left">          
-          <!-- <amp-img src="images/batman.jpg" alt="Bat Man" height="100" width="300"></amp-img> -->
+         
           <h1> <b>ALFONSO ARRIOLA <br> Security Guard</b></h1>
           <div class="contact">
             <h2> Contact</h2>
               <a href="https://www.linkedin.com/in/alfonso-arriola/">Linkedin</a>
 
               <br>
-              347-924-7532
+              <br>
+              <strong>347-924-7532</strong>
+              
           </div>
         </div>
         <div class="right">
-            <h3> New York Security Guard #:</h3>
-            <h4> ID: 10012734780</h4>
-            <a href="https://appext20.dos.ny.gov/lcns_public/id_search_frm"> <b><u>Check My License Status Here</u></b></a>
+            <h3> New York Security Guard ID #</h3>
+            <h4> 10012734780</h4>
+            <a href="https://appext20.dos.ny.gov/lcns_public/id_search_frm"> <b> - Check My License Status Here -</b></a>
+
 
                 <amp-img class="self" src="images/self.webp" alt="Alfonso Arriola" height="200" width="200"></amp-img>
                   <h2> Experience </h2>
